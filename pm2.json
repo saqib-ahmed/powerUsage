@@ -3,7 +3,7 @@
         {
             "name": "cn-content-api",
             "script": "socket.js",
-            "cwd": "/var/power",
+            "cwd": "/var/powerUsage",
             "min_uptime": 10000,
             "restart_delay": 10000,
             "max_restarts": 10,
