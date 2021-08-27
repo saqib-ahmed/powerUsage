@@ -26,6 +26,7 @@ async function main(){
   		if(data.userAgent && data.userAgent == "device" && data.params){
 			// data is the message from eWeLink
 			data.timestamp = + new Date()
+			delete data.apikey
 			const insertResult = await collection.insertOne(data);
 			console.log('Inserted document =>', insertResult);
 		} else {
