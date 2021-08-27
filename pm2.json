@@ -1,0 +1,19 @@
+{
+    "apps": [
+        {
+            "name": "cn-content-api",
+            "script": "socket.js",
+            "cwd": "/var/power",
+            "min_uptime": 10000,
+            "restart_delay": 10000,
+            "max_restarts": 10,
+            "log_date_format": "YYYY-MM-DD HH:mm Z",
+            "env_production": {
+                "NODE_ENV": "production",
+                "EWEEMAIL": "test",
+                "EWEPASSWORD": "pass",
+                "EWEREGION": "as"
+            }
+        }
+    ]
+}
